@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         app:lottie_autoPlay="false"
-        app:lottie_fileName="slider.json"
+        app:lottie_fileName="lottie.json"
         app:lottie_loop="false"
         app:lottie_speed="1.0" />
 

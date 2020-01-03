@@ -13,7 +13,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val numPage = 6
+        val numPage = 7
         viewpager.adapter = ViewPagerAdapter(this, numPage)
         viewpager.addOnPageChangeListener(object : ViewPager.OnPageChangeListener {
             override fun onPageScrollStateChanged(state: Int) {
@@ -36,7 +36,7 @@ class MainActivity : AppCompatActivity() {
                     Log.e("min max", "min - $min , max $max")
 
                     lottie.setMinAndMaxProgress(min, max)
-                    lottie.progress = min + positionOffset.toInt()/numPage
+                    lottie.progress = min + positionOffset/numPage
                 }
 
 
@@ -44,7 +44,7 @@ class MainActivity : AppCompatActivity() {
 
             override fun onPageSelected(position: Int) {
 //                Log.e("Entrei position","position -> " + position)
-//                lottie.pauseAnimation()
+                lottie.pauseAnimation()
             }
         })
 
