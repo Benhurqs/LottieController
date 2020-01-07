@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_gravity="center_horizontal"
+    android:gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/heart"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        app:lottie_autoPlay="false"
+        app:lottie_fileName="heart.json"
+        android:onClick="startAnimation"
+        app:lottie_loop="false"
+        app:lottie_speed="1.0" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/star"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        app:lottie_autoPlay="false"
+        app:lottie_fileName="star.json"
+        android:onClick="startAnimation"
+        app:lottie_loop="false"
+        app:lottie_speed="1.0" />
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/like"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        app:lottie_autoPlay="false"
+        app:lottie_fileName="like.json"
+        android:onClick="startAnimation"
+        app:lottie_loop="false"
+        app:lottie_speed="1.0" />
+
+</LinearLayout>
