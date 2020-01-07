@@ -24,6 +24,7 @@ class ViewPagerAdapter(val context: Context, val numPages: Int) : PagerAdapter()
     override fun instantiateItem(container: ViewGroup, position: Int): Any {
         val view = LayoutInflater.from(context).inflate(R.layout.viewpager_item, container , false)
         view.page.text = position.toString()
+        view.page.visibility = View.GONE
 
         container.addView(view)
         return view
